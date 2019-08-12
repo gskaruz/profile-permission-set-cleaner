@@ -63,14 +63,6 @@ permSetWordsToRemove.append(['<field>Lead.CustomField__1c</field>', 2, 2])
 for fileName in permSetList:
 	processFile(fileName, permSetWordsToRemove)
 
-permSetList = listDir("c:\\Data\\permissionsets\\")
-permSetWordsToRemove = []
-permSetWordsToRemove.append(['<field>Account.CustomTextField__c</field>', 2, 2])
-permSetWordsToRemove.append(['<field>Lead.CustomField__1c</field>', 2, 2])
-
-for fileName in permSetList:
-	processFile(fileName, permSetWordsToRemove)
-
 	
 # show execution time
 print("--- %s seconds ---" % (round(time.time() - start_time, 2)))
